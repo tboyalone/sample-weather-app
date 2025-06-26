@@ -41,6 +41,7 @@ const weatherResult = document.getElementById('weather-result');
 const manualTemp = document.getElementById('manual-temp');
 const manualCond = document.getElementById('manual-cond');
 const iconId = document.getElementById('icon-id');
+const weatherPlatform = document.getElementById('weather-platform');
 
 //Populate the dropdown with city options
 weatherData.forEach((city) => {
@@ -63,6 +64,7 @@ selectCity.addEventListener('change', function() {
     var selectedCity = selectCity.value;
     weatherData.forEach((data)=>{
         if (selectedCity === data.city) {
+            weatherPlatform.setAttribute('class', 'bg-gray-950 w-96 h-96 flex flex-col justify-center text-center items-center')
             weatherResult.removeAttribute('class', 'hidden');
             weatherInfo.innerHTML = `<h2>${selectedCity}, ${data.country}</h2>`;
             manualTemp.innerHTML = `<p>Temperature: ${data.temperature}°C</p>`;
