@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="flex justify-center items-center content-center text-center" style="background-image: url('weather.gif'); background-size: 100%;">
+    <div class="container mx-auto p-4 flex flex-col items-center bg-gray-700 opacity-80 mt-20 h-96">
+        <h1 class="text-2xl font-bold mb-4 text-white font-serif">Weather App</h1>
+    
+        <select name="" id="select-city" class="mb-4 p-2 border rounded border-gray-300 text-white font-serif bg-gray-800"> 
+            <option value="" class="">Select City</option>
+        </select>
+        <div class="bg-gray-950 w-96 h-96 flex flex-col justify-center text-center items-center">
+            <div id="weather-result" class="hidden p-4 bg-blue-300 rounded border-2 py-2">
+                <div class="my-3">
+                    <h2 class="text-xl font-semibold mb-2 text-white font-serif underline">Weather Details</h2>
+                </div>
+                <div>
+                    <p id="weather-info" class="text-white font-serif text-[22px]"></p>
+                    <div class="mt-5">
+                        <p id="manual-temp" class="text-white font-serif text-[22px]"></p>
+                    </div>
+                    <div class="flex flex-row justify-center mt-5 gap-5">
+                        <img src="rain.svg" alt=""  class="w-20 h-20" id="icon-id">
+                        <p id="manual-cond" class="text-white font-serif text-[18px] text-center pt-2"></p>
+                    </div>
+                    
+                </div>
+                </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
