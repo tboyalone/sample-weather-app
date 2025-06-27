@@ -58,7 +58,7 @@ weatherData.forEach((city) => {
 //     option.text = weatherData[i].city
 //     selectCity.appendChild('option');
 // }
-console.log(weatherData[1].temperature);
+// console.log(weatherData[1].temperature);
 
 selectCity.addEventListener('change', function() {
     var selectedCity = selectCity.value;
